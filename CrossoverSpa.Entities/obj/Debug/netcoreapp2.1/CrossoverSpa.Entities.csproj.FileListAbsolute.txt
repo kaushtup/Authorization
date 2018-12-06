@@ -1,0 +1,9 @@
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.deps.json
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.dll
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.pdb
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.AssemblyInfoInputs.cache
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.AssemblyInfo.cs
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.dll
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.pdb
+C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Entities\obj\Debug\netcoreapp2.1\CrossoverSpa.Entities.csprojAssemblyReference.cache

@@ -1,0 +1,70 @@
+﻿@model CrossoverSpa.ViewModels.LoginViewModel
+@{
+                /**/
+
+                ViewBag.Title = "Login";
+                //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- jQuery Validation -->
+<script src="~/assets/lib/jquery-validation/jquery.validate.min.js"></script>
+<script src="~/assets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<style>
+    .login-box-body {
+        border: 1px solid #ccc;
+    }
+
+    .login-box, .register-box {
+        margin: 5% auto;
+    }
+</style>
+
+<div class="login-box">
+    <div class="login-logo">
+        <b>System Center</b>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg" style="font-weight: bold;">Sign in to start your session</p>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group has-feedback">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Username", autocomplete = "off" })
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group has-feedback">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+
+            if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span class="text-danger">@Model.ErrorMessage</span>
+                    </div>
+                </div>
+            }
+
+            if (!string.IsNullOrEmpty(Model.SuccessMessage))
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span class="text-green">@Model.SuccessMessage</span>
+                    </div>
+                </div>
+            }
+
+          <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                </div>
+            </div>
+        }
+    </div>
+    <!-- /.login-box-body -->
+</div>
