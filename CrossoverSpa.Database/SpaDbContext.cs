@@ -1,6 +1,5 @@
 ﻿using CrossoverSpa.Entities;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 using Microsoft.EntityFrameworkCore;
 
 
@@ -27,6 +26,6 @@ namespace CrossoverSpa.Database
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<EmployeeContact> EmployeeContacts { get; set; }
         public DbSet<Feature> Features { get; set; }
-        public DbSet<RoleFeature> RolesFeatures { get; set; }
+        public DbSet<RoleFeature> RoleFeatures { get; set; }
     }
 }

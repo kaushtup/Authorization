@@ -7,19 +7,8 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "CrossoverSpa.ViewModel/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0"
-        },
         "runtime": {
           "CrossoverSpa.ViewModel.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1.0": {
-        "runtime": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
-            "assemblyVersion": "2.1.1.0",
-            "fileVersion": "2.1.1.18157"
-          }
         }
       }
     }
@@ -27,11 +16,6 @@
   "libraries": {
     "CrossoverSpa.ViewModel/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

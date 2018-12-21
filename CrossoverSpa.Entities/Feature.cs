@@ -7,5 +7,6 @@ namespace CrossoverSpa.Entities
     public class Feature : EntityBase
     {
         public string Name { get; set; }
+        public string RouteUrl { get; set; }
     }
 }

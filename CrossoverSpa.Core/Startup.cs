@@ -1,6 +1,9 @@
-﻿using CrossoverSpa.Core.Services;
+﻿using System.Collections.Generic;
+using CrossoverSpa.Core.Controllers;
+using CrossoverSpa.Core.Services;
 using CrossoverSpa.Database;
 using CrossoverSpa.Helper;
+using CrossoverSpa.ViewModels;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,10 +30,20 @@ namespace CrossoverSpa.Core
         {
             //services.AddTransient<IReadOnlyRepository<User>, Repository<User>>();
 
-
+            services.AddTransient<IDbHelper, DbHelper>();
             services.AddScoped<IMvcControllerDiscovery, MvcControllerDiscovery>();
 
-            services.AddScoped<IDbHelper, DbHelper>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+
+
+
+            services.AddScoped<List<MvcControllerInfo>>();
+
+           
+
+
+            services.AddHttpContextAccessor();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -40,9 +53,12 @@ namespace CrossoverSpa.Core
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            
+
+
+
 
             services.AddDbContext<SpaDbContext>
+
             (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAuthentication(options =>
@@ -51,18 +67,8 @@ namespace CrossoverSpa.Core
                   options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                   options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             }).AddCookie(options => { options.LoginPath = "/Account/Login"; });
-            services.AddMvc().AddRazorPagesOptions(options =>
-          {
-              options.Conventions.AuthorizeFolder("/");
-              options.Conventions.AllowAnonymousToPage("/Account/Login");
-          });
+            services.AddScoped<IFeatureDiscovery, FeatureDiscovery>();
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("Admins", policy => policy.RequireRole("Admins"));
-                options.AddPolicy("Employees", policy => policy.RequireRole("Employees"));
- 
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,20 +89,40 @@ namespace CrossoverSpa.Core
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-
-            app.UseMvc(routes =>
+            //app.Use((context, next) =>
+            //{
+            //    context.Response.Headers.Add("X-Content-Type-Option", "nosniff");
+            //    return next();
+            //});
+            app.UseMiddleware();
+            app.UseMvc(
+            routes =>
             {
                 routes.MapRoute(
-                  name: "areas",
-                  template: "{area:exists}/{controller}/{action}/{id?}");
-
+                   "areas",
+                  "{area:exists}/{controller}/{action}/{id?}");
 
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Account}/{action=Login}/{id?}");
+                    "default",
+                    "{Account}/{Login}/{id?}");
             });
 
-            app.UseMiddleware();
+            // app.MapWhen(_ => _.Request.Path.Value.Contains("/"), map=>map.UseMiddleware());
+            //app.MapWhen(context => context.Request.Path.StartsWithSegments("/"), appBuilder =>
+            //{
+            //   appBuilder.UseMiddleware();
+            //});
+            //app.Use((context, next) =>
+            //{
+            //    if ((context as DefaultHttpContext).Request.Path.StartsWithSegments("/"))
+            //    {
+            //        app.UseMiddleware();
+            //    }
+
+            //    return next();
+            //});
+
+
         }
     }
 }

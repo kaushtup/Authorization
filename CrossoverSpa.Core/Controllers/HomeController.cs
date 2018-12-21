@@ -7,8 +7,8 @@ using System.ComponentModel;
 
 namespace CrossoverSpa.Core.Controllers
 {
-    //[Route("dashboard")]
-    [CustomAttribute("Human Resource","Home Controller","This is a home controller.")]
+    [Route("dashboard")]    
+    [CustomAttribute("User Department", "Home Controller","This is a home controller.")]
     public class HomeController : Controller 
     {
         private readonly IDbHelper _helper;
@@ -18,6 +18,7 @@ namespace CrossoverSpa.Core.Controllers
             this._helper = helper;
         }
 
+        [Route("Index")]
         [CustomAttribute("","Show Users","This action is used to show users.")]
         public async Task<IActionResult> Indexnew()
         {
@@ -26,15 +27,15 @@ namespace CrossoverSpa.Core.Controllers
         }
 
         //[Authorize(Policy = "Admins")]
-        //[Route("aboutus")]
+        [Route("aboutus")]
         [CustomAttribute("", "About Us", "This contains the description of the site.")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
             return View();
         }
-        
-        //[Authorize(Policy = "Employees")]
+
+        [Route("Contactus")]
         [CustomAttribute("", "Contacts", "This contains contact informations.")]
         public IActionResult Contact()
         {
@@ -43,12 +44,14 @@ namespace CrossoverSpa.Core.Controllers
             return View();
         }
 
+        [Route("Privacy")]
         [CustomAttribute("", "Privacy", "This is a privacy page.")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Route("Error")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         [CustomAttribute("", "Error", "Any error occured is displayed here.")]
         public IActionResult Error()

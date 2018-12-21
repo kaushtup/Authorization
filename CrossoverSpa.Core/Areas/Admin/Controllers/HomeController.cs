@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace CrossoverSpa.Core.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+
     [CustomAttribute("Human Resource", "Home Controller", "This is a admin home controller.")]
     public class HomeController : Controller
     {

@@ -1,52 +1,217 @@
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.deps.json
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.runtimeconfig.json
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.runtimeconfig.dev.json
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.csprojAssemblyReference.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.csproj.CoreCompileInputs.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.RazorAssemblyInfo.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.RazorAssemblyInfo.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.AssemblyInfoInputs.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.AssemblyInfo.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.TagHelpers.input.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.TagHelpers.output.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.RazorCoreGenerate.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.RazorTargetAssemblyInfo.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.RazorTargetAssemblyInfo.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Database.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Helper.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.ViewModel.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.ViewModel.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.Views.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Core.Views.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Database.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\bin\Debug\netcoreapp2.1\CrossoverSpa.Helper.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.Views.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.csproj.CopyComplete
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\CrossoverSpa.Core.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Home\Indexnew.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Home\Index.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Employee\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Employee\Views\_ViewStart.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Account\SignUp.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Areas\Employee\Views\Profile\Index.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Role\Create.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Role\Edit.g.cshtml.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Core\obj\Debug\netcoreapp2.1\Razor\Views\Role\Show.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.deps.json
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.json
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.dev.json
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csprojAssemblyReference.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CoreCompileInputs.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfoInputs.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfo.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.input.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.output.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorCoreGenerate.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CopyComplete
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Indexnew.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/_ViewStart.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/_ViewStart.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignUp.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Profile/Index.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Create.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Edit.g.cshtml.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Show.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.deps.json
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.json
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.dev.json
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csprojAssemblyReference.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CoreCompileInputs.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfoInputs.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfo.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.input.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.output.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorCoreGenerate.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/_ViewStart.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Profile/Index.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/_ViewStart.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignUp.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Indexnew.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Create.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Edit.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Show.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CopyComplete
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Profile/Index.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.deps.json
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.json
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.dev.json
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csprojAssemblyReference.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CoreCompileInputs.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfoInputs.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfo.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.input.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.output.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorCoreGenerate.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Profile/Index.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignUp.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Indexnew.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Profile/Index.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Create.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Edit.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Show.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CopyComplete
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Error/UnAuthorized.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_PartialNavigation.g.cshtml.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginShared.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.deps.json
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.json
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.runtimeconfig.dev.json
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Helper.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/bin/Debug/netcoreapp2.1/CrossoverSpa.ViewModel.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csprojAssemblyReference.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CoreCompileInputs.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorAssemblyInfo.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfoInputs.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.AssemblyInfo.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.input.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.TagHelpers.output.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorCoreGenerate.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Home/Index.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Admin/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Profile/Index.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Areas/Employee/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignUp.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Error/UnAuthorized.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Indexnew.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Profile/Index.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Create.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Edit.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Role/Show.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginShared.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_PartialNavigation.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.RazorTargetAssemblyInfo.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.Views.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.csproj.CopyComplete
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Core/obj/Debug/netcoreapp2.1/CrossoverSpa.Core.pdb

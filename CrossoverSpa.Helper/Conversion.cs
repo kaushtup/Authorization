@@ -35,7 +35,9 @@ namespace CrossoverSpa.Helper
             return new FeatureViewModel
             {
                 Id = obj.Id,
-                Name = obj.Name
+                Name = obj.Name,
+                RouteUrl=obj.RouteUrl
+                
             };
         }
 

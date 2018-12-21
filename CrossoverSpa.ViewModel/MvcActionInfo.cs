@@ -13,6 +13,7 @@ namespace CrossoverSpa.ViewModels
         public string ControllerId { get; set; }
 
         public string Description { get; set; }
+        public string RouteLinkAction { get; set; }
 
         public MvcControllerInfo Controller { get; set; }
 

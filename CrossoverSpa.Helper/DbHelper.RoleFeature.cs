@@ -40,7 +40,7 @@ namespace CrossoverSpa.Helper
                     {
                         //var objFeature = new Feature
                         //{
-                        //    Name = item.Name,
+                        //    Email = item.Email,
                         //};
 
                         //var feature = await new Repository<Feature>(_context).AddAsync(objFeature);

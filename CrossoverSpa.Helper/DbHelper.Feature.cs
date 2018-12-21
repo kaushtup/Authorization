@@ -15,12 +15,13 @@ namespace CrossoverSpa.Helper
         }
 
         //nested save....it does not requires transaction.
-        public bool CreateFeature(string featureName)
+        public bool CreateFeature(string featureName,string url)
         {
 
             var objFeature = new Feature
             {
-                Name = featureName
+                Name = featureName,
+                RouteUrl=url
             };
 
             try

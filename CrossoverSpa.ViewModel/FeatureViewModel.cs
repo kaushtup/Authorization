@@ -8,5 +8,6 @@ namespace CrossoverSpa.ViewModel
     public class FeatureViewModel : BaseViewModel
     {
         public string Name { get; set; }
+        public string RouteUrl { get; set; }
     }
 }

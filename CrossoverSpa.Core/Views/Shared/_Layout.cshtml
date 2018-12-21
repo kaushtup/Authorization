@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@*@model IEnumerable<CrossoverSpa.ViewModels.MvcControllerInfo>*@
+@using CrossoverSpa.Core.Services;
+@inject IFeatureDiscovery mvcControllerInfo
+@{
+    var features = mvcControllerInfo.GetFeatures();
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -30,14 +36,36 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+                    @if (features != null)
+                    {
+                         @foreach (var item in features)
+                         {
+                              <li class="dropdown">
+                              <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Key<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   @if (item.Value != null)
+                                    {
+                                         @foreach (var item2 in item.Value)
+                                         {
+                                            if (item2.ToLower() != "signup" && item2.ToLower() != "login")
+                                            {
+                                                     @*<li> @Html.ActionLink(item2,item2,item.Key)</li>*@
+                                                      <li> <a href="~/@item.Key/@item2">@item2</a></li>
+                                             }
+                                          }
+                                       }
+                               </ul>
+                               </li>
+                            }
+                    }else
+                    {
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    }
+               </ul>          
             </div>
         </div>
     </nav>
-
+ 
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">

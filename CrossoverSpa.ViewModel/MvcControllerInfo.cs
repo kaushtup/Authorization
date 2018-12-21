@@ -15,7 +15,8 @@ namespace CrossoverSpa.ViewModels
         public string Description { get; set; }
 
         public string ModuleName { get; set; }
-        
+      
+
         public List<MvcActionInfo> Actions { get; set; }
     }
 }

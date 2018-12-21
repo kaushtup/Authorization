@@ -1,18 +1,60 @@
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\CrossoverSpa.Database.deps.json
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\CrossoverSpa.Database.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.csprojAssemblyReference.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.csproj.CoreCompileInputs.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.AssemblyInfoInputs.cache
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.AssemblyInfo.cs
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\CrossoverSpa.Database.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\CrossoverSpa.Entities.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Protocols.xml
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.csproj.CopyComplete
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\obj\Debug\netcoreapp2.1\CrossoverSpa.Database.pdb
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Kaushtup Bista\source\repos\CrossoverSpa.Core\CrossoverSpa.Database\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.xml
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.deps.json
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csprojAssemblyReference.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CoreCompileInputs.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfoInputs.cache
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfo.cs
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.IdentityModel.Protocols.xml
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CopyComplete
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/Kaushtup Bista/source/repos/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.xml
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.deps.json
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.xml
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/Microsoft.IdentityModel.Protocols.xml
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csprojAssemblyReference.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CoreCompileInputs.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfoInputs.cache
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfo.cs
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CopyComplete
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+C:/Users/Saroj Ad/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csprojAssemblyReference.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CoreCompileInputs.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfoInputs.cache
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfo.cs
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.deps.json
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+/Users/macoxs/Desktop/New folder/CrossoverSpa.Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CopyComplete
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.deps.json
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/bin/Debug/netcoreapp2.1/CrossoverSpa.Entities.pdb
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csprojAssemblyReference.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CoreCompileInputs.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfoInputs.cache
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.AssemblyInfo.cs
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.csproj.CopyComplete
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.dll
+/Users/macoxs/Desktop/CrossoverSpa_Core/CrossoverSpa.Database/obj/Debug/netcoreapp2.1/CrossoverSpa.Database.pdb

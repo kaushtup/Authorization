@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Create Role";
     var modules = (IEnumerable<CrossoverSpa.ViewModels.MvcModuleInfo>)ViewData["Modules"];
+
  }
 
 @section Header {
@@ -51,7 +52,7 @@
 
                                                 name = action.DisplayName ?? action.DisplayName;
 
-                                                    <li data-value="@action.Name">
+                                                    <li data-value="@action.DisplayName">
                                             <a asp-area="@controller.AreaName" asp-controller=@controller.Name asp-action=@action.Name>
                                                     @name
                                                
@@ -107,10 +108,12 @@
                     var area = $(controller).next().next();
                     $(area).prop('name', controllerName + '.AreaName');
 
+
                     $('ul > li > input[type="checkbox"]:checked', $(controller).parent()).each(function () {
                         var action = $(this);
-                        var actionName = controllerName + '.Actions[' + j + '].Name';
+                        var actionName = controllerName + '.Actions[' + j + '].DisplayName';
                         $(action).prop('name', actionName);
+
 
                         j++;
                     });

@@ -71,6 +71,7 @@ namespace CrossoverSpa.Core.Services
                     Name = actionDescriptor.ControllerName,
                     Description = controllerTypeInfo.GetCustomAttribute<CustomAttribute>()?.Description,
                     ModuleName = controllerTypeInfo.GetCustomAttribute<CustomAttribute>()?.ModuleName,
+                  
                 };
 
                 
@@ -80,15 +81,30 @@ namespace CrossoverSpa.Core.Services
                                             (a => a.ActionName).Select(g => g.First()))
                 {
                     var methodInfo = descriptor.MethodInfo;
-                    actions.Add(new MvcActionInfo
-                    {
-                        ControllerId = currentController.Id,
-                        Name = descriptor.ActionName, 
-                        DisplayName =
-                             methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName,
-                        Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description
-                    });
+                   
 
+                    //if (routeInfo.Template == null) continue;
+
+                //    actions.Add(new MvcActionInfo
+                //    {
+                //        ControllerId = currentController.Id,
+                //        Name = descriptor.ActionName, 
+                //        DisplayName=methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName,
+                //        Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description,
+
+                //        RouteLinkAction = descriptor.AttributeRouteInfo?.Template
+
+                //});
+                    var action = new MvcActionInfo();
+                    action.ControllerId = currentController.Id;
+                    action.Name = descriptor.ActionName;
+                    action.DisplayName = methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName;
+                    action.Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description;
+                               
+                    action.RouteLinkAction = descriptor.AttributeRouteInfo?.Template;
+
+
+                    actions.Add(action);
                     int _count = 0;
                     if (features.Count() != 0)
                     {
@@ -102,18 +118,18 @@ namespace CrossoverSpa.Core.Services
 
                         if (_count != 1)
                         {
-                            _dbHelper.CreateFeature(methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName);
+                            _dbHelper.CreateFeature(methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName, descriptor.AttributeRouteInfo?.Template);
                         }
                     }
                     else
                     {
-                        _dbHelper.CreateFeature(methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName);
+                        _dbHelper.CreateFeature(methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName, descriptor.AttributeRouteInfo?.Template);
                     }
                 }
                
                 currentController.Actions = actions;
                 _mvcControllers.Add(currentController);
-                
+                 
 
                 var controller = new List<MvcControllerInfo>();
 
@@ -125,7 +141,8 @@ namespace CrossoverSpa.Core.Services
                     Name = currentController.Name,
                     Description = currentController.Description,
                     ModuleName = currentController.ModuleName,
-                    Actions = currentController.Actions
+                    Actions = currentController.Actions,
+                   
                 });
 
                 int count = 0;
@@ -154,10 +171,6 @@ namespace CrossoverSpa.Core.Services
                 }
                 
             }
-
-
-            
-
 
             return _mvcModules;
         }

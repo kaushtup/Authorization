@@ -1,5 +1,6 @@
 ﻿using CrossoverSpa.ViewModel;
 using CrossoverSpa.ViewModels;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace CrossoverSpa.Helper
         //bool IsAddOrDelete(int id);
         Task<List<RoleFeatureViewModel>> GetRoleFeaturesAsync();
         List<FeatureViewModel> GetFeatures();
-        bool CreateFeature(string featureName);
+        bool CreateFeature(string featureName, string RouteUrl);
         List<RoleViewModel> GetRoles();
 
         Task<int> GetRoleFeatureId(int id);
@@ -32,6 +33,8 @@ namespace CrossoverSpa.Helper
         Task<bool> CreateRoleFeatureListAsync(string roleName, List<int> featureId);
 
         Task<bool> DeleteRoleFeatureByIdAsync(int id);
+        List<UserViewModel> GetUsers();
+
 
 
     }

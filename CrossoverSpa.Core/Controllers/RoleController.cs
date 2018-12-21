@@ -10,28 +10,35 @@ using System.Threading.Tasks;
 
 namespace CrossoverSpa.Core.Controllers
 {
+    [Route("Role")]
    [CustomAttribute("Human Resource", "Role Controller", "This is a home controller.")]
     public class RoleController : Controller
     {
         private readonly IDbHelper _helper;
 
         private readonly IMvcControllerDiscovery _mvcControllerDiscovery;
+        private readonly List<MvcControllerInfo> _mvcControllerInfos;
 
-        public RoleController(IMvcControllerDiscovery mvcControllerDiscovery, IDbHelper helper)
+        public RoleController(IMvcControllerDiscovery mvcControllerDiscovery, IDbHelper helper,List<MvcControllerInfo> mvcControllerInfos)
         {
             _mvcControllerDiscovery = mvcControllerDiscovery;
             this._helper = helper;
+            _mvcControllerInfos = mvcControllerInfos;
         }
 
         // GET: Role/Create
 
+        [Route("CreateRole")]
         [CustomAttribute("", "Create Role", "This action is used to create the roles.")]
-        public async Task<IActionResult> Create()
+        public  IActionResult Create()
         {
+
             ViewData["Modules"] = _mvcControllerDiscovery.GetControllers();
+
             return View();
         }
 
+       [Route("CreateRole")]
         [HttpPost]
         public async Task<IActionResult> Create(RoleViewModel viewModel)
         {
@@ -52,7 +59,7 @@ namespace CrossoverSpa.Core.Controllers
                     foreach (var action in controller.Actions)
                     {
                         var feature = new FeatureViewModel();
-                        feature.Name = action.Name;
+                        feature.Name = action.DisplayName;
 
                         featuresList.Add(feature);
                     }
@@ -75,6 +82,7 @@ namespace CrossoverSpa.Core.Controllers
             return RedirectToAction("Create");
         }
 
+        [Route("Show")]
         [CustomAttribute("", "Show Roles", "This action is used to show Roles.")]
         public async Task<IActionResult> Show()
         {
@@ -82,6 +90,7 @@ namespace CrossoverSpa.Core.Controllers
             return View(role);
         }
 
+        [Route("EditRole")]
         [CustomAttribute("", "Edit Role", "This action is used to edit the roles.")]
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
@@ -125,7 +134,8 @@ namespace CrossoverSpa.Core.Controllers
             return View(rolefeatureIdList);
         }
 
-  
+        [Route("AddFeatures")]
+        [CustomAttribute("", "Add Features", "This action is used to Add Features to a role.")]
         [HttpGet]
         public async Task<IActionResult> AddRole(string name, int roleId)
         {
@@ -149,6 +159,8 @@ namespace CrossoverSpa.Core.Controllers
             return RedirectToAction("Edit",new { id=roleId});
         }
 
+        [Route("DeleteRole")]
+        [CustomAttribute("", "Delete Features", "This action is used to Delete features of a role.")]
         [HttpGet]
         public async Task<IActionResult> DeleteRole(string name, int roleId)
         {

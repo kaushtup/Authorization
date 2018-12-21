@@ -1,28 +1,40 @@
-﻿using CrossoverSpa.Core.Models;
+﻿using CrossoverSpa.Core;
+using CrossoverSpa.Core.Models;
 using CrossoverSpa.Helper;
 using CrossoverSpa.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.ComponentModel;
+using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace CrossoverSpa.App.Web.Controllers
 {
-    [CustomAttribute("Sales Department", "Account Controller", "This is a account controller.")]
+    [Route("")]
+    [Route("Account")]
+    [CustomAttribute("Security", "Account Controller", "This is a account controller.")]
     public class AccountController : Controller
     {
         private readonly IDbHelper _dbHelper;
 
-        public AccountController(IDbHelper helper)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        //readonly Disposable disposable;
+
+        public AccountController(IHttpContextAccessor httpContextAccessor, IDbHelper helper)
         {
             this._dbHelper = helper;
-           
-        }
 
+            _httpContextAccessor = httpContextAccessor;
+
+            //_dbhttphelper = httpHelper;
+        }
+       
+        [Route("")]
+        [Route("login")]
         [CustomAttribute("", "Login", "This is a login page.")]
         public ActionResult Login()
         {
@@ -30,7 +42,7 @@ namespace CrossoverSpa.App.Web.Controllers
             return View(model);
         }
 
-        
+        [Route("login")]
         [HttpPost]
         public async Task<ActionResult> Login(LoginViewModel model)
         {
@@ -51,35 +63,42 @@ namespace CrossoverSpa.App.Web.Controllers
             {
                 var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme, ClaimTypes.Email, ClaimTypes.Role);
                 identity.AddClaim(new Claim(ClaimTypes.Email, model.Email));
-
-                if (user.RoleId == 1)
-                {
-                    identity.AddClaim(new Claim(ClaimTypes.Role, "Admins"));
-                }
-                else if (user.RoleId == 2)
-                {
-                    identity.AddClaim(new Claim(ClaimTypes.Role, "Employees"));
-                }
+           
+                
+                //if (user.RoleId == 1)
+                //{
+                //    identity.AddClaim(new Claim(ClaimTypes.Role, "Admins"));
+                //}
+                //else if (user.RoleId == 2)
+                //{
+                //    identity.AddClaim(new Claim(ClaimTypes.Role, "Employees"));
+                //}
 
                 var principal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties { IsPersistent = false });
-                //return RedirectToAction("Indexnew","Home");
-                if (user.RoleId == 1)
-                {
-                    
-                     //HttpContext.Session.Set("UserId", "1");
-                    return RedirectToAction("Index", "Home", new { Area = "Admin" });
-                    
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Profile", new { Area = "Employee" });
-                }
+
+
+
+                //if (_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+                //{
+                //    var n = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Email);
+
+                //    var l = _httpContextAccessor.HttpContext.User.Identity.Name;
+
+                //  //HttpContext.Session.SetString("a", "n");
+                //}
+
+
+                ViewData["UserIdentity"] = HttpContext.User.Identity.Name;
+                    return RedirectToAction("Index", "Profile");
+                
             }
+
+
             return RedirectToAction("Login");
         }
 
-
+        [Route("Signup")]
         [CustomAttribute("", "SignUp", "This is a signup page.")]
         [HttpGet]
         public async Task<ActionResult> SignUp()
@@ -88,7 +107,7 @@ namespace CrossoverSpa.App.Web.Controllers
             return View();
         }
 
-
+        [Route("Signup")]
         [HttpPost]
         public async Task<ActionResult> SignUp(UserViewModel viewmodel)
         {
@@ -106,13 +125,34 @@ namespace CrossoverSpa.App.Web.Controllers
             return RedirectToAction("SignUp");
         }
 
+        [Route("Logout")]
+        [CustomAttribute("", "LogOut", "This is a Logout function.")]
+        public async Task<IActionResult> Logout()
+        {
+            //_dbhttphelper.Dispose();
 
+            //DisposeClass.RegisterDispose(_dbhttphelper, _dbhttphelper.HttpContext);
+          await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
+            return RedirectToAction("Login");
+        }
+
+      
+       
 
         protected override void Dispose(bool disposing)
         {
             _dbHelper.Dispose();
             base.Dispose(disposing);
+        }
+    }
+
+    public static class DisposeClass
+    {
+        public static T RegisterDispose<T>(this T disposable, HttpContext context) where T : IDisposable
+        {
+            context.Response.RegisterForDispose(disposable);
+            return disposable;
         }
     }
 }
