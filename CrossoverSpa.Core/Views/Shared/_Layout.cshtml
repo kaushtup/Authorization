@@ -1,103 +1,100 @@
-﻿@*@model IEnumerable<CrossoverSpa.ViewModels.MvcControllerInfo>*@
-@using CrossoverSpa.Core.Services;
-@inject IFeatureDiscovery mvcControllerInfo
-@{
-    var features = mvcControllerInfo.GetFeatures();
-}
-<!DOCTYPE html>
+﻿@*@model IEnumerable<CrossoverSpa.ViewModels.MvcControllerInfo>*@ @using CrossoverSpa.Core.Services; @inject IFeatureDiscovery mvcControllerInfo  @{ var features = mvcControllerInfo.GetFeatures();
+} <!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CrossoverSpa.Core</title>
+    <environment include="Development">         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />         <link rel="stylesheet" href="~/css/site.css" />     </environment>
+    <environment exclude="Development">         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />     </environment>     <style>
+      .wrapper, html {
+          background-color: #ecf0f5 !important;
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    }
+
+       .content-wrapper, .main-footer {
+          margin-left: 0;
+
+    }
+
+       .navbar-header {
+          float: left;
+
+    }
+
+       .navbar-brand {
+          padding: 5px;
+
+    }
+
+       .main-header .navbar {
+          margin-left: 0;
+
+    }
+
+       .content {
+          padding: 10px !important;
+
+    }
+
+       .main-footer {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          text-align: center;
+
+    }
+
+
+</style>
 </head>
-<body>
+<body class="skin-blue">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CrossoverSpa.Core</a>
-            </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-header">                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">                     <span class="sr-only">Toggle navigation</span>                     <span class="icon-bar"></span>                     <span class="icon-bar"></span>                     <span class="icon-bar"></span>                 </button>                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CrossoverSpa.Core</a>             </div>             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @if (features != null)
+
                     {
-                         @foreach (var item in features)
-                         {
-                              <li class="dropdown">
-                              <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Key<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                   @if (item.Value != null)
+                        @foreach (var item in features)
+
+                        {
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Key<span class="caret"></span></a>                               <ul class="dropdown-menu">
+                                    @if (item.Value != null)
+
                                     {
-                                         @foreach (var item2 in item.Value)
-                                         {
+                                        @foreach (var item2 in item.Value)
+
+                                        {
+
                                             if (item2.ToLower() != "signup" && item2.ToLower() != "login")
-                                            {
-                                                     @*<li> @Html.ActionLink(item2,item2,item.Key)</li>*@
-                                                      <li> <a href="~/@item.Key/@item2">@item2</a></li>
-                                             }
-                                          }
-                                       }
-                               </ul>
-                               </li>
-                            }
-                    }else
+
+                                            {@*<li> @Html.ActionLink(item2,item2,item.Key)</li>*@
+                                            <li> <a href="~/@item.Key/@item2">@item2</a></li>
+                                        }
+                                    }
+                                    } 
+                                </ul> 
+                            </li>
+                        }
+                    }
+                    else
                     {
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    }
-               </ul>          
-            </div>
-        </div>
-    </nav>
- 
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - CrossoverSpa.Core</p>
-        </footer>
-    </div>
-
-    <environment include="Development">
+                    } 
+                </ul>           
+            </div> 
+        </div> 
+    </nav>       <partial name="_CookieConsentPartial" />      <div class="container body-content">         @RenderBody()         <hr />         <div id="main-footer">             <footer>             <p>&copy; 2018 - CrossoverSpa.Core</p>         </footer>         </div>      </div>      <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
-    @RenderSection("Header", required: false)
-    @RenderSection("Scripts", required: false)
+        <script src="~/js/site.js" asp-append-version="true"></script> 
+    </environment>     <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"  asp-fallback-src="~/lib/jquery/dist/jquery.min.js"  asp-fallback-test="window.jQuery"  crossorigin="anonymous"  integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"  asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"  asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"  crossorigin="anonymous"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script> 
+    </environment>      @RenderSection("Header", required: false)     @RenderSection("Scripts", required: false)
 </body>
-</html>
+</html>  

@@ -30,10 +30,12 @@ namespace CrossoverSpa.Helper
 
         Task<List<FeatureViewModel>> GetFeaturesAsync();
 
-        Task<bool> CreateRoleFeatureListAsync(string roleName, List<int> featureId);
+        Task<bool> CreateRoleFeatureListAsync(int roleId, List<int> featureId);
 
         Task<bool> DeleteRoleFeatureByIdAsync(int id);
         List<UserViewModel> GetUsers();
+        Task<bool> CreateRoleAsync(string role);
+
 
 
 

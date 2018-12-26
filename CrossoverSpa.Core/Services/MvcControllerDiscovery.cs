@@ -14,7 +14,7 @@ namespace CrossoverSpa.Core.Services
     {
         private List<MvcModuleInfo> _mvcModules;
 
-      
+
 
         private List<MvcControllerInfo> _mvcControllers;
         private readonly IDbHelper _dbHelper;
@@ -28,13 +28,13 @@ namespace CrossoverSpa.Core.Services
 
         public IEnumerable<MvcModuleInfo> GetControllers()
         {
-            
+
 
 
             if (_mvcModules != null)
                 return _mvcModules;
 
-           _mvcControllers = new List<MvcControllerInfo>();
+            _mvcControllers = new List<MvcControllerInfo>();
             _mvcModules = new List<MvcModuleInfo>();
 
 
@@ -47,7 +47,7 @@ namespace CrossoverSpa.Core.Services
                 .GroupBy(descriptor => descriptor.ControllerTypeInfo.FullName)
                 .ToList();
 
-       
+
 
             foreach (var actionDescriptors in items)
             {
@@ -71,42 +71,42 @@ namespace CrossoverSpa.Core.Services
                     Name = actionDescriptor.ControllerName,
                     Description = controllerTypeInfo.GetCustomAttribute<CustomAttribute>()?.Description,
                     ModuleName = controllerTypeInfo.GetCustomAttribute<CustomAttribute>()?.ModuleName,
-                  
+
                 };
 
-                
+
 
                 var actions = new List<MvcActionInfo>();
                 foreach (var descriptor in actionDescriptors.GroupBy
                                             (a => a.ActionName).Select(g => g.First()))
                 {
                     var methodInfo = descriptor.MethodInfo;
-                   
+
 
                     //if (routeInfo.Template == null) continue;
 
-                //    actions.Add(new MvcActionInfo
-                //    {
-                //        ControllerId = currentController.Id,
-                //        Name = descriptor.ActionName, 
-                //        DisplayName=methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName,
-                //        Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description,
+                    //    actions.Add(new MvcActionInfo
+                    //    {
+                    //        ControllerId = currentController.Id,
+                    //        Name = descriptor.ActionName, 
+                    //        DisplayName=methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName,
+                    //        Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description,
 
-                //        RouteLinkAction = descriptor.AttributeRouteInfo?.Template
+                    //        RouteLinkAction = descriptor.AttributeRouteInfo?.Template
 
-                //});
+                    //});
                     var action = new MvcActionInfo();
                     action.ControllerId = currentController.Id;
                     action.Name = descriptor.ActionName;
                     action.DisplayName = methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName;
                     action.Description = methodInfo.GetCustomAttribute<CustomAttribute>()?.Description;
-                               
+
                     action.RouteLinkAction = descriptor.AttributeRouteInfo?.Template;
 
 
                     actions.Add(action);
                     int _count = 0;
-                    if (features.Count() != 0)
+                    if (features.Any())
                     {
                         foreach (var item in features)
                         {
@@ -126,31 +126,31 @@ namespace CrossoverSpa.Core.Services
                         _dbHelper.CreateFeature(methodInfo.GetCustomAttribute<CustomAttribute>()?.DisplayName, descriptor.AttributeRouteInfo?.Template);
                     }
                 }
-               
+
                 currentController.Actions = actions;
                 _mvcControllers.Add(currentController);
-                 
+
 
                 var controller = new List<MvcControllerInfo>();
 
                 controller.Add(new MvcControllerInfo
                 {
-                    
+
                     AreaName = currentController.AreaName,
                     DisplayName = currentController.DisplayName,
                     Name = currentController.Name,
                     Description = currentController.Description,
                     ModuleName = currentController.ModuleName,
                     Actions = currentController.Actions,
-                   
+
                 });
 
                 int count = 0;
-                if(_mvcModules.Count()!=0)
+                if (_mvcModules.Count !=0)
                 {
-                    foreach(var item in _mvcModules)
+                    foreach (var item in _mvcModules)
                     {
-                        if(item.Name == currentModule.Name)
+                        if (item.Name == currentModule.Name)
                         {
                             item.Controllers.AddRange(controller);
                             count = 1;
@@ -163,13 +163,13 @@ namespace CrossoverSpa.Core.Services
                     }
                 }
 
-               
+
                 else
                 {
                     currentModule.Controllers = controller;
                     _mvcModules.Add(currentModule);
                 }
-                
+
             }
 
             return _mvcModules;

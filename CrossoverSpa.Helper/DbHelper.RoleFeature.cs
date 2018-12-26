@@ -22,19 +22,19 @@ namespace CrossoverSpa.Helper
         }
 
 
-        public async Task<bool> CreateRoleFeatureListAsync(string roleName, List<int> featureId)
+        public async Task<bool> CreateRoleFeatureListAsync(int roleId, List<int> featureId)
         {
             using (var dbTran = _context.Database.BeginTransaction())
             {
                 try
                 {
-                    var objRole = new Role
-                    {
-                        Name = roleName
+                    //var objRole = new Role
+                    //{
+                    //    Name = roleName
 
-                    };
+                    //};
 
-                    var user = await new Repository<Role>(_context).AddAsync(objRole);
+                    //var user = await new Repository<Role>(_context).AddAsync(objRole);
 
                     foreach (var item in featureId)
                     {
@@ -47,7 +47,7 @@ namespace CrossoverSpa.Helper
 
                         var objRoleFeature = new RoleFeature
                         {
-                            RoleId = objRole.Id,
+                            RoleId = roleId,
                             FeatureId = item
                         };
                         await new Repository<RoleFeature>(_context).AddAsync(objRoleFeature);

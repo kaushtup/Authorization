@@ -94,7 +94,7 @@ namespace CrossoverSpa.Core
             //    context.Response.Headers.Add("X-Content-Type-Option", "nosniff");
             //    return next();
             //});
-            app.UseMiddleware();
+            //app.UseMiddleware();
             app.UseMvc(
             routes =>
             {

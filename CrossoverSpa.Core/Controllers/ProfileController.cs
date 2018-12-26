@@ -30,7 +30,7 @@ namespace CrossoverSpa.Core.Controllers
 
         [Route("Index")]
         [CustomAttribute("", "UserFeature", "This is a employee home controller.")]
-        public async Task<IActionResult> Index()
+        public  IActionResult Index()
         {
            
 

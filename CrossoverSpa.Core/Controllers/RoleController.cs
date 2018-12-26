@@ -48,37 +48,38 @@ namespace CrossoverSpa.Core.Controllers
                 return View(viewModel);
             }
 
-          if (viewModel.SelectedControllers != null && viewModel.SelectedControllers.Any())
-            {
-                var featuresList = new List<FeatureViewModel>();
+            //if (viewModel.SelectedControllers != null && viewModel.SelectedControllers.Any())
+            //{
+            //    var featuresList = new List<FeatureViewModel>();
 
-                var features = await _helper.GetFeaturesAsync();
+            //    var features = await _helper.GetFeaturesAsync();
 
-                foreach (var controller in viewModel.SelectedControllers)
-                {
-                    foreach (var action in controller.Actions)
-                    {
-                        var feature = new FeatureViewModel();
-                        feature.Name = action.DisplayName;
+            //    foreach (var controller in viewModel.SelectedControllers)
+            //    {
+            //        foreach (var action in controller.Actions)
+            //        {
+            //            var feature = new FeatureViewModel();
+            //            feature.Name = action.DisplayName;
 
-                        featuresList.Add(feature);
-                    }
-                }
+            //            featuresList.Add(feature);
+            //        }
+            //    }
 
-                List<int> featureId = new List<int>();
-                foreach (var item in features)
-                {
-                    foreach (var newitem in featuresList)
-                    {
-                        if (item.Name == newitem.Name)
-                        {
-                            featureId.Add(item.Id);
-                        }
-                    }
-                }
+            //    List<int> featureId = new List<int>();
+            //    foreach (var item in features)
+            //    {
+            //        foreach (var newitem in featuresList)
+            //        {
+            //            if (item.Name == newitem.Name)
+            //            {
+            //                featureId.Add(item.Id);
+            //            }
+            //        }
+            //    }
 
-                await _helper.CreateRoleFeatureListAsync(viewModel.Name, featureId);
-            }
+            //    await _helper.CreateRoleFeatureListAsync(viewModel.Name, featureId);
+            //}
+            await _helper.CreateRoleAsync(viewModel.Name);
             return RedirectToAction("Create");
         }
 
@@ -86,7 +87,50 @@ namespace CrossoverSpa.Core.Controllers
         [CustomAttribute("", "Show Roles", "This action is used to show Roles.")]
         public async Task<IActionResult> Show()
         {
+            List<RoleViewModel> roleToView = new List<RoleViewModel>();
             var role = await _helper.GetRolesAsync();
+            var roleFeature = await _helper.GetRoleFeaturesAsync();
+           
+           
+                foreach (var roles in role)
+                {
+                bool status = false;
+                RoleViewModel roleTemp = new RoleViewModel();
+                    foreach (var item in roleFeature)
+                     {
+                            if (item.RoleId == roles.Id)
+                            {
+                       
+                                status = true;
+
+                             }
+                             
+                }
+                if (status == true)
+                {
+                    //role.Add(new RoleViewModel
+                    //{
+                    //    OldRole = true
+
+                    //});
+                    roleTemp.Id = roles.Id;
+                    roleTemp.Name = roles.Name;
+                    roleTemp.OldRole = true;
+                    roleToView.Add(roleTemp);
+                }
+                else
+                {
+                    //role.Add(new RoleViewModel
+                    //{
+                    //    OldRole = true
+
+                    //});
+                    roleTemp.Id = roles.Id;
+                    roleTemp.Name = roles.Name;
+                    roleTemp.OldRole = false;
+                    roleToView.Add(roleTemp);
+                }
+            }          
             return View(role);
         }
 
@@ -134,9 +178,9 @@ namespace CrossoverSpa.Core.Controllers
             return View(rolefeatureIdList);
         }
 
-        [Route("AddFeatures")]
-        [CustomAttribute("", "Add Features", "This action is used to Add Features to a role.")]
-        [HttpGet]
+        //[Route("AddFeatures")]
+        //[CustomAttribute("", "Add Features", "This action is used to Add Features to a role.")]
+        //[HttpGet]
         public async Task<IActionResult> AddRole(string name, int roleId)
         {
             var feature = await _helper.GetFeaturesAsync();
@@ -159,9 +203,9 @@ namespace CrossoverSpa.Core.Controllers
             return RedirectToAction("Edit",new { id=roleId});
         }
 
-        [Route("DeleteRole")]
-        [CustomAttribute("", "Delete Features", "This action is used to Delete features of a role.")]
-        [HttpGet]
+        //[Route("DeleteRole")]
+        //[CustomAttribute("", "Delete Features", "This action is used to Delete features of a role.")]
+        //[HttpGet]
         public async Task<IActionResult> DeleteRole(string name, int roleId)
         {
 
@@ -191,6 +235,54 @@ namespace CrossoverSpa.Core.Controllers
             await _helper.DeleteRoleFeatureByIdAsync(rolefeatureId);
 
             return RedirectToAction("Edit", new { id = roleId });
+        }
+
+        [Route("AssignRole")]
+        [CustomAttribute("", "Assign Role", "This action is used to create the roles.")]
+        public async Task<IActionResult> AssignFeatures(int id)
+        {
+            ViewData["Modules"] = _mvcControllerDiscovery.GetControllers();
+            var rolesFromDb = await _helper.GetRoleByIdAsync(id);
+
+            return View(rolesFromDb);
+        }
+        [Route("AssignRole")]
+        [CustomAttribute("", "Assign Role", "This action is used to create the roles.")]
+        [HttpPost]
+        public async Task<IActionResult> AssignFeatures(RoleViewModel viewModel)
+        {
+            if (viewModel.SelectedControllers != null && viewModel.SelectedControllers.Any())
+            {
+                var featuresList = new List<FeatureViewModel>();
+
+                var features = await _helper.GetFeaturesAsync();
+
+                foreach (var controller in viewModel.SelectedControllers)
+                {
+                    foreach (var action in controller.Actions)
+                    {
+                        var feature = new FeatureViewModel();
+                        feature.Name = action.DisplayName;
+
+                        featuresList.Add(feature);
+                    }
+                }
+
+                List<int> featureId = new List<int>();
+                foreach (var item in features)
+                {
+                    foreach (var newitem in featuresList)
+                    {
+                        if (item.Name == newitem.Name)
+                        {
+                            featureId.Add(item.Id);
+                        }
+                    }
+                }
+
+                await _helper.CreateRoleFeatureListAsync(viewModel.Id, featureId);
+            }
+            return RedirectToAction("Create");
         }
 
     }

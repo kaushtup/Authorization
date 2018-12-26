@@ -1,5 +1,6 @@
 ﻿using CrossoverSpa.Entities;
 using CrossoverSpa.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,8 +33,28 @@ namespace CrossoverSpa.Helper
 
             return list;
         }
+        public async Task<bool>CreateRoleAsync(string role)
+        {
 
-        
+            var objRole = new Role
+            {
+                Name = role,
+
+            };
+
+            try
+            {
+                await new Repository<Role>(_context).AddAsync(objRole);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+       
+
+
 
     }
 }

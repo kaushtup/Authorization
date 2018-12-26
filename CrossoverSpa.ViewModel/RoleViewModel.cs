@@ -10,5 +10,6 @@ namespace CrossoverSpa.ViewModels
         public string Name { get; set; }
 
         public IEnumerable<MvcControllerInfo> SelectedControllers { get; set; }
+        public bool OldRole { get; set; }
     }
 }
