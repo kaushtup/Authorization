@@ -14,73 +14,59 @@ namespace CrossoverSpa.Core
     public class Middleware
     {
         private readonly RequestDelegate _next;
-
         private static IDbHelper _dbHelper;
         //private static MvcControllerDiscovery _mvcControllerDiscovery;
-
         //readonly Disposable _disposable;
-
         public Middleware(RequestDelegate next)
         {
             _next = next;
         }
-
-        public  Task Invoke(HttpContext httpContext, IDbHelper dbHelper)
+        public Task Invoke(HttpContext httpContext, IDbHelper dbHelper)
         {
-            _dbHelper = dbHelper;
-            bool Count=false;
-            //mvcControllerDiscovery = _mvcControllerDiscovery;
-
-            var users =   _dbHelper.GetUsersAsync().Result;
-
-            var email = httpContext.User.Identity.Name;
-
-            if (email != null)
+            try
             {
-                var role = new RoleViewModel();
-
-                foreach (var item in users)
+                _dbHelper = dbHelper;
+                bool Count = false;
+                //mvcControllerDiscovery = _mvcControllerDiscovery;
+                var users = _dbHelper.GetUsersAsync().Result;
+                var email = httpContext.User.Identity.Name;
+                if (email != null)
                 {
-                    if (email.ToLower() == item.Email.ToLower())
+                    var role = new RoleViewModel();
+                    foreach (var item in users)
                     {
-                        role.Id = item.RoleId;
+                        if (email.ToLower() == item.Email.ToLower())
+                        {
+                            role.Id = item.RoleId;
+                        }
                     }
-                }
-
-                var roleFeatures =   _dbHelper.GetRoleFeaturesAsync().Result;
-
-                List<int> list = new List<int>();
-
-                foreach (var item in roleFeatures)
-                {
-                    if (item.RoleId == role.Id)
+                    var roleFeatures = _dbHelper.GetRoleFeaturesAsync().Result;
+                    List<int> list = new List<int>();
+                    foreach (var item in roleFeatures)
                     {
-                        list.Add(item.FeatureId);
+                        if (item.RoleId == role.Id)
+                        {
+                            list.Add(item.FeatureId);
+                        }
                     }
-                }
-                var featureList = new List<FeatureViewModel>();
-                foreach (var item in list)
-                {
-                    var feature =  _dbHelper.GetFeatureByIdAsync(item).Result;
-                    featureList.Add(feature);
-                }
-
-                var path = httpContext.Request.Path.ToString();
-               
-                    var addressLink = new Uri(path);
-
-                    var absPath = addressLink.AbsolutePath;
+                    var featureList = new List<FeatureViewModel>();
+                    foreach (var item in list)
+                    {
+                        var feature = _dbHelper.GetFeatureByIdAsync(item).Result;
+                        featureList.Add(feature);
+                    }
+                    
+                   // List<FeatureViewModel> featureListtest = features.Features(role.Id);
+                    var path = httpContext.Request.Path.ToString();
                     foreach (var item in featureList)
                     {
                         var concatPath = "/" + item.RouteUrl;
-
-                        if ((path.ToLower() == (concatPath).ToLower()) || path == "/Error/UnAuthorized" || path== "/")
-                         { 
-                             Count = true;
-                         }
+                        if ((path.ToLower() == (concatPath).ToLower()) || path == "/Error/UnAuthorized" || path == "/")
+                        {
+                            Count = true;
+                        }
                     }
                     //if(path == "/Error/UnAuthorized") { Count = true; }
-               
                     if (Count == true)
                     {
                         return _next(httpContext);
@@ -90,13 +76,18 @@ namespace CrossoverSpa.Core
                         httpContext.Response.Redirect("/Error/UnAuthorized");
                         return _next(httpContext);
                     }
-                
-                
 
-               
+
+
+
+                }
+                return _next(httpContext);
+
+            } catch (Exception e)
+            {
+                return _next(httpContext);
             }
-            return _next(httpContext);
-        }
+        }  
     }
 
    

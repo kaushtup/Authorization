@@ -4,11 +4,13 @@ using CrossoverSpa.Core.Models;
 using CrossoverSpa.Helper;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using CrossoverSpa.ViewModels;
+using System.Collections.Generic;
 
 namespace CrossoverSpa.Core.Controllers
 {
     [Route("dashboard")]    
-    [CustomAttribute("User Department", "Home Controller","This is a home controller.")]
+    [CustomAttribute("User Department", "Home ","This is a home controller.")]
     public class HomeController : Controller 
     {
         private readonly IDbHelper _helper;
@@ -23,7 +25,27 @@ namespace CrossoverSpa.Core.Controllers
         public async Task<IActionResult> Indexnew()
         {
             var user = await _helper.GetUsersAsync();
-            return View(user);
+            var roles = await _helper.GetRolesAsync();
+           var userToView = new List<UserViewModel>();
+            foreach (var item in user)
+            {
+                var users = new UserViewModel();
+                foreach (var item2 in roles)
+                {
+                    if (item2.Id == item.RoleId)
+                    {
+                        users.Id = item.Id;
+                        users.Email = item.Email;
+                        users.RoleId = item.RoleId;
+                        users.RoleName = item2.Name;
+                    }
+                       
+                }
+                userToView.Add(users);
+
+            }
+            
+            return View(userToView);
         }
 
         //[Authorize(Policy = "Admins")]

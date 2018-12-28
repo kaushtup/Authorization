@@ -4,17 +4,29 @@
     ViewData["Title"] = "Indexnew";
 }
 
-<div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-    </ul>
-</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+<div class="row">
+    <div class="container col-lg-3">
+        <div class="form-group">
+            <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                <input type="text" id="Search" placeholder="Search" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-10">
+        <a class="btn btn-info btn-sm" asp-controller="Account" asp-action="Signup">
+            <span class="glyphicon glyphicon-user">New</span>
+        </a>
+    </div>
+    
+</div>
+<div class="row">
+    
+</div>
+    
+
 <table class="table">
     <thead>
         <tr>
@@ -22,12 +34,10 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
            
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
+        
           
             <th>
-                @Html.DisplayNameFor(model => model.RoleId)
+                Role
             </th>
           
            
@@ -36,29 +46,55 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="Search">
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
-           
             <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-           
-            <td>
-                @Html.DisplayFor(modelItem => item.RoleId)
+                @Html.DisplayFor(modelItem => item.RoleName)
             </td>
          
            
           
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                <a asp-controller="Edit" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-sm" style="color:yellow">
+                    <span class="glyphicon glyphicon-edit "></span> Edit 
+                </a>
+                <a asp-controller="Details" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm" style="color:aqua">
+                    <span class="glyphicon glyphicon-list "></span>Details
+                </a>
+                <a asp-controller="Delete" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-info btn-sm" style="color:red">
+                    <span class="glyphicon glyphicon-remove "></span> Delete
+                </a>
             </td>
         </tr>
 }
     </tbody>
 </table>
 
+
+<script src="~/lib/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1) {
+                return true;
+            }
+        }
+        $("#Search").keyup(function () {
+            var searchKey = $("#Search").val().toLowerCase();
+            $(".Search").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchKey))
+                    $(this).hide();
+                else {
+                    $(this).show();
+                }
+                   
+            })
+        })
+    })
+</script>
 

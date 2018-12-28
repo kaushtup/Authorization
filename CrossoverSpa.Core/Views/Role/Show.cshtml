@@ -4,57 +4,104 @@
     ViewData["Title"] = "Show";
 }
 
-<h2>Show</h2>
+<h4>Roles</h4>
+<div class="row">
+    <div class="container col-lg-3">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                <input type="text" id="Search" placeholder="Search" class="form-control" />
 
-<p>
-    <a asp-controller="Role" asp-action="Create">Create New Role</a>|
-    <a asp-controller="Account" asp-action="SignUp">Create New User</a>
-</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container col-lg-6">
+        <p>
+            <a asp-controller="Role" asp-action="Create" class="btn btn-info btn-sm">
+                <span class="glyphicon glyphicon-user"></span> Create New Role
+            </a>
+
+        </p>
+    </div>
+
+</div>
+
 <table class="table">
     <thead>
         <tr>
-            <th style="">
+            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-           
-            <th></th>
+
+            <th style="text-align:center">
+                Your Actions
+            </th>
+
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model)
-{
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-           
-            <td>
-                @if (item.OldRole)
+        @foreach (var item in Model)
+        {
+            <tr class="Search">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
 
-                {
-                <a asp-controller="Role" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-lg " style="color:Red">
-                    <span class="glyphicon glyphicon-edit"></span> Edit
-                </a>
-                    // @Html.ActionLink("Edit Features", "Edit", "Role", new { id = item.Id })
+                <td style="text-align:center">
+                    @if (item.OldRole)
 
-                }
-                else
-                {
-                <a asp-controller="Role" asp-action="AssignFeatures" asp-route-id="@item.Id" class="btn btn-info btn-lg">
-                    <span class="glyphicon glyphicon-plus"></span> Add
-                </a>
+                    {
+                        <a asp-controller="Role" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-sm " style="color:yellow">
+                            <span class="glyphicon glyphicon-edit"></span> Edit features
+                        </a>
+                        // @Html.ActionLink("Edit Features", "Edit", "Role", new { id = item.Id })
+                        <a asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-info btn-sm" style="color:red">
+                            <span class="glyphicon glyphicon-edit "></span> Delete Role
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Role" asp-action="AssignFeatures" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-plus"></span> Add features
+                        </a>
+                        <a asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-info btn-sm" style="color:red">
+                            <span class="glyphicon glyphicon-edit "></span> Delete Role
+                        </a>
+                    }
 
-                }
 
+                    @*<a asp-action="Edit"
+                         asp-controller="Role"
+                        asp-route-id="@item.Id">Edit</a>*@
 
-                @*<a asp-action="Edit"
-         asp-controller="Role"
-        asp-route-id="@item.Id">Edit</a>*@
+                    @*@Html.ActionLink("Edit", "Edit Role",  new { id = item.Id })*@
 
-                @*@Html.ActionLink("Edit", "Edit Role",  new { id = item.Id })*@
-
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<script src="~/lib/jquery/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1) {
+                return true;
+            }
+        }
+        $("#Search").keyup(function () {
+            var searchKey = $("#Search").val().toLowerCase();
+            $(".Search").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchKey))
+                    $(this).hide();
+                else {
+                    $(this).show();
+                }
+            })
+        })
+    })
+</script>
+

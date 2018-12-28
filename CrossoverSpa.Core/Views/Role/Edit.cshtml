@@ -1,158 +1,134 @@
 ﻿@model CrossoverSpa.ViewModel.RoleFeatureListViewModel
-
 @{
     ViewData["Title"] = "Edit";
     var modules = (IEnumerable<CrossoverSpa.ViewModels.MvcModuleInfo>)ViewData["Modules"];
 }
-
 @section Header {
     <link href="~/lib/jquery-bonsai/jquery.bonsai.css" rel="stylesheet" />
 }
-
-<h2>Create Role</h2>
-
-<hr />
 <div class="row">
-    @*<div class="col-md-6">*@
-    <form asp-action="Create" class="form-horizontal">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           @*<div class="form-group">
-                <label asp-for="Role.Name" class="control-label col-md-2"></label>
-                <div class="col-md-10">
-                    <input asp-for="item" class="form-control" />
-                    <span asp-validation-for="Role.Name" class="text-danger"></span>
-                </div>
-            </div>*@
-        
-            <div class="form-group">
-                <label class="col-md-2 control-label">Access List</label>
-                <label class="col-md-2 control-label">Description</label>
-                <br />
-                <div class="col-md-9">
-                    <ol id="tree">
-                        @foreach (var module in modules)
-                        {
-                            @module.Name
+    <div style="text-align:center">
+        <h4>Role: @Html.DisplayFor(model => model.Role.Name)</h4>
+    </div>
+</div>
 
-                            @if (module.Controllers.Any())
-                            {
+<div class="row">
+    <div class="container col-lg-4">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                <input type="text" id="Search" placeholder="Search" class="form-control">
+            </div>
+        </div>
 
-                                @foreach (var controller in module.Controllers)
-                                {
-                                    var name = controller.DisplayName ?? controller.Name;
+    </div>
+    <div class="container col-lg-9">
+        <div>
+            <a asp-controller="Role" asp-action="Show" asp-route-roleId="@Model.Role.Id" class="btn btn-info btn-sm" style="color:black">
+                <span class="glyphicon  " style="height:5px"> Show Roles</span>
+            </a>
+        </div>
+    </div>
+</div>
 
-                                    <li class="controller" data-value="@controller.Name">
-                                        <input type="hidden" class="area" value="@controller.AreaName" />
-                                        @name
-                                        @if (controller.Actions.Any())
-                                        {
-                                            <ul>
 
-                                                @foreach (var action in controller.Actions)
-                                                {
+<div class="row">
+    <table class="table table-hover table-striped table-bordered " id="Edit_table">
+        <thead>
+            <tr>
+                <th>
+                    Feature Name
+                </th>
 
-                                                    name = action.DisplayName ?? action.Name;
+                <th>
+                    Module Name
+                </th>
+                <th>
+                    Contoller Name
+                </th>
+                <th>
+                    Route Url
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in modules)
+            {
+                foreach (var controller in item.Controllers)
+                {
+                    foreach (var actions in controller.Actions)
+                    {
+                        <tr class="Search">
+                            <td>
+                                @Html.DisplayFor(modelItem => actions.DisplayName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => controller.DisplayName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => actions.RouteLinkAction)
+                            </td>
 
-                                                   
-
-                                                    <li data-value="@action.Name">
-                                                        <a asp-area="@controller.AreaName" asp-controller=@controller.Name asp-action=@action.Name>
-                                                            @name
-                                                          
-                                                            @{
-                                                                var news = 0;
-                                                            }
-                                                            @*var roleId;*@
-                                                            @foreach (var item in Model.Feature)
-                                                            {
-                                                                //roleId = item.Feature.ActionId;
-
-                                                                
-                                                                if (item.Name.Equals(action.DisplayName))
-                                                                {
-                                                                    news = 1;
-                                                                    @*@Html.ActionLink("Delete", "AddEmployee", "Home", new { id = item.Id }, "")*@
-                                                                }
-                                                                @*else
-                                                               {
-
-                                                                    @Html.ActionLink("Add", "AddEmployee", "Home", new { id = item.Id }, "")
-                                                                 }*@
-                                                            }
-
-                                                            @if (news == 1)
-                                                            {
-                                                                @Html.ActionLink("Delete", "DeleteRole", "Role", new { name = action.DisplayName,roleId=Model.RoleId }, "")
-                                                            }
-                                                            else
-                                                            {
-                                                                @Html.ActionLink("Add", "AddRole", "Role", new { name = action.DisplayName,roleId=Model.RoleId }, "")
-                                                            }
-
-                                                        </a>
-                                                        <p style="padding-left: 200px; margin-top: -22px;"> @action.Description</p>
-                                                    </li>
-                                                }
-                                            </ul>
-
-                                        }
-                                    </li>
+                            <td>
+                                @{
+                                    var news = 0;
                                 }
-                            }
+                                @foreach (var item2 in Model.Feature)
+                                {
+                                    //roleId = item.Feature.ActionId;
+                                    if (item2.Name.Equals(actions.DisplayName))
+                                    {
+                                        news = 1;
 
-                        }
-                    </ol>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-    </form>
-</div>
-@*</div>*@
+                                    }
+                                }
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+                                @if (news == 1)
+                                {
+                                    <a asp-controller="Role" asp-action="DeleteRole" asp-route-roleId="@Model.Role.Id" asp-route-name="@actions.DisplayName" class="btn btn-info btn-sm" style="color:red">
+                                        <span class="glyphicon glyphicon-remove " style="height:5px"> Remove</span>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a asp-controller="Role" asp-action="AddRole" asp-route-roleId="@Model.Role.Id" asp-route-name="@actions.DisplayName" class="btn btn-info btn-sm" style="color:green">
+                                        <span class="glyphicon glyphicon-plus "> Add</span>
+                                    </a>
+                                }
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script src="~/lib/jquery-qubit/jquery.qubit.js"></script>
-    <script src="~/lib/jquery-bonsai/jquery.bonsai.js"></script>
-    <script>
-        $(function () {
-            $('#tree').bonsai({
-                expandAll: false,
-                checkboxes: true,
-                createInputs: 'checkbox'
-            });
 
-            $('form').submit(function () {
-                var i = 0, j = 0;
-                $('.controller > input[type="checkbox"]:checked, .controller > input[type="checkbox"]:indeterminate').each(function () {
-                    var controller = $(this);
-                    if ($(controller).prop('indeterminate')) {
-                        $(controller).prop("checked", true);
+                            </td>
+                        </tr>
                     }
-                    var controllerName = 'SelectedControllers[' + i + ']';
-                    $(controller).prop('name', controllerName + '.Name');
 
-                    var area = $(controller).next().next();
-                    $(area).prop('name', controllerName + '.AreaName');
+                }
 
-                    $('ul > li > input[type="checkbox"]:checked', $(controller).parent()).each(function () {
-                        var action = $(this);
-                        var actionName = controllerName + '.Actions[' + j + '].Name';
-                        $(action).prop('name', actionName);
+            }
 
-                        j++;
-                    });
-                    j = 0;
-                    i++;
-                });
+        <tbody>
+    </table>
+</div>
 
+<script src="~/lib/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1) {
                 return true;
-            });
-        });
-    </script>
-}
+            }
+        }
+        $("#Search").keyup(function () {
+            var searchKey = $("#Search").val().toLowerCase();
+            $(".Search").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchKey))
+                    $(this).hide();
+                else {
+                    $(this).show();
+                }
+            })
+        })
+    })
+</script>

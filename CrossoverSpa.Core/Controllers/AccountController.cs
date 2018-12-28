@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace CrossoverSpa.App.Web.Controllers
 {
-    [Route("")]
+    [Route("/")]
     [Route("Account")]
-    [CustomAttribute("Security", "Account Controller", "This is a account controller.")]
+    [CustomAttribute("Security", "Account ", "This is a account controller.")]
     public class AccountController : Controller
     {
         private readonly IDbHelper _dbHelper;
@@ -122,7 +122,7 @@ namespace CrossoverSpa.App.Web.Controllers
                    viewmodel.RoleId
                    );
 
-            return RedirectToAction("SignUp");
+            return RedirectToAction("Login");
         }
 
         [Route("Logout")]

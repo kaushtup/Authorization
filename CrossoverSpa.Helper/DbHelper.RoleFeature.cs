@@ -89,8 +89,7 @@ namespace CrossoverSpa.Helper
         {
             return (await new Repository<RoleFeature>(_context).FindAsync(x => x.RoleId == id)).FirstOrDefault().Id;
         }
-
-        public async Task<bool> DeleteRoleFeatureByIdAsync(int id)
+        public async Task<bool> DeleteFeatureFromRoleByIdAsync(int id)
         {
             if (id < 1)
             {
@@ -101,15 +100,69 @@ namespace CrossoverSpa.Helper
                 await new Repository<RoleFeature>(_context).RemoveByIdAsync(id);
                 return true;
             }
-            catch (Exception e)
+            catch
             {
-
                 return false;
             }
+       
+        }
+
+        public async Task<bool> DeleteRoleFeatureByIdAsync(int id)
+        {
+            if (id < 1)
+            {
+                return false;
+            }
+            using (var dbTran=_context.Database.BeginTransaction())
+            {
+                try
+                {
+                    var roleidForUser = await new Repository<User>(_context).FindAllAsync();
+         
+                    var roleidForFeature = await new Repository<RoleFeature>(_context).FindAllAsync();
+                   
+                    foreach (var item in roleidForFeature)
+                    {
+                        if (item.RoleId == id)
+                        {
+                           
+                            if (item.Id != 0)
+                            {
+                                await new Repository<RoleFeature>(_context).RemoveByIdAsync(item.Id);
+                            }
+                        }
+                           
+                    }
+                    foreach (var item in roleidForUser)
+                    {
+                        if (item.RoleId == id)
+                        {
+                            if (item.Id != 0)
+                            {
+                                await new Repository<User>(_context).RemoveByIdAsync(item.Id);
+                            }
+                        }
+                          
+                       
+                    }
+                    
+                   
+                    await new Repository<Role>(_context).RemoveByIdAsync(id);
+                    dbTran.Commit();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    dbTran.Rollback();
+                    return false;
+                }
+            }
+              
 
 
         }
 
+        
 
 
     }

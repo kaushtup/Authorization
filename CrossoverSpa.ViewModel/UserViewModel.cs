@@ -15,11 +15,11 @@ namespace CrossoverSpa.ViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-       
+
         //[DataType(DataType.Password)]
         //[Compare("Password")]
         //public string ConfirmPassword { get; set; }
-
+        public string RoleName { get; set; }
 
         public int RoleId { get; set; }
 

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace CrossoverSpa.Core.Controllers
 {
     [Route("Profile")]
-    [CustomAttribute("User Department", "Profile Controller", "This is a employee home controller.")]
+    [CustomAttribute("User Department", "Profile ", "This is a employee home controller.")]
     public class ProfileController : Controller
     {
         private readonly IDbHelper _dbHelper;

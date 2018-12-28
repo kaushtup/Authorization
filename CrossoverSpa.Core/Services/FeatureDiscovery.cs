@@ -64,12 +64,22 @@ namespace CrossoverSpa.Core.Services
 
                   if (itemfromDb.Name == itemFromFeature.Name)
                     {
-                        var stringToSplit = itemFromFeature.RouteUrl;
-                        string[] words= stringToSplit.Split('/');
-                        if (!featureDictionary.ContainsKey(words[0]))
-                            featureDictionary.Add(words[0], new List<string>());
+                        if (itemFromFeature.RouteUrl != "")
+                        {
+                            var stringToSplit = itemFromFeature.RouteUrl;
+                            string[] words = stringToSplit.Split('/');
+                            if (words[1] != null)
+                            {
+                                if (!featureDictionary.ContainsKey(words[0]))
+                                    featureDictionary.Add(words[0], new List<string>());
 
-                        featureDictionary[words[0]].Add(words[1]);
+                                featureDictionary[words[0]].Add(words[1]);
+                            }
+                            
+                        }
+                        
+                        
+                       
 
                     }
                    

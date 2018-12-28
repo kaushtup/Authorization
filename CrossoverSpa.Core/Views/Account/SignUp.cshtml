@@ -4,10 +4,7 @@
     ViewBag.Title = "SignUp";
     Layout = "~/Views/Shared/_LoginShared.cshtml";
 }
-
 <h2>SignUp</h2>
-
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -50,9 +47,8 @@
         </div>
     </div>
 }
-
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <a asp-controller="Profile" asp-action="Index">Back to List</a>
 </div>
 
 

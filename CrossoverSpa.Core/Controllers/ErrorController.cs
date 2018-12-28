@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace CrossoverSpa.Core.Controllers
 {
     [Route("Error")]
-    [CustomAttribute("Errors", "Account Controller", "This is a account controller.")]
+    [CustomAttribute("Errors", "Error ", "This is a account controller.")]
     public class ErrorController : Controller
     {
         // GET: /<controller>/
         [Route("Index")]
-        [CustomAttribute("", "Index Controller", "This is a account controller.")]
+        [CustomAttribute("", "Index ", "This is a account controller.")]
         public IActionResult Index()
         {
             return View();

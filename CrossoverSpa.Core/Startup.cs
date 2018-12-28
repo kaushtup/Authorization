@@ -27,24 +27,12 @@ namespace CrossoverSpa.Core
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            //services.AddTransient<IReadOnlyRepository<User>, Repository<User>>();
-
+        {          
             services.AddTransient<IDbHelper, DbHelper>();
             services.AddScoped<IMvcControllerDiscovery, MvcControllerDiscovery>();
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-
-
-
-            services.AddScoped<List<MvcControllerInfo>>();
-
-           
-
-
+            services.AddScoped<List<MvcControllerInfo>>();          
             services.AddHttpContextAccessor();
-
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -53,14 +41,8 @@ namespace CrossoverSpa.Core
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-
-
-
             services.AddDbContext<SpaDbContext>
-
             (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddAuthentication(options =>
             {
                   options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -70,7 +52,6 @@ namespace CrossoverSpa.Core
             services.AddScoped<IFeatureDiscovery, FeatureDiscovery>();
 
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -83,7 +64,6 @@ namespace CrossoverSpa.Core
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -94,7 +74,7 @@ namespace CrossoverSpa.Core
             //    context.Response.Headers.Add("X-Content-Type-Option", "nosniff");
             //    return next();
             //});
-            //app.UseMiddleware();
+            app.UseMiddleware();
             app.UseMvc(
             routes =>
             {
@@ -106,23 +86,6 @@ namespace CrossoverSpa.Core
                     "default",
                     "{Account}/{Login}/{id?}");
             });
-
-            // app.MapWhen(_ => _.Request.Path.Value.Contains("/"), map=>map.UseMiddleware());
-            //app.MapWhen(context => context.Request.Path.StartsWithSegments("/"), appBuilder =>
-            //{
-            //   appBuilder.UseMiddleware();
-            //});
-            //app.Use((context, next) =>
-            //{
-            //    if ((context as DefaultHttpContext).Request.Path.StartsWithSegments("/"))
-            //    {
-            //        app.UseMiddleware();
-            //    }
-
-            //    return next();
-            //});
-
-
         }
     }
 }

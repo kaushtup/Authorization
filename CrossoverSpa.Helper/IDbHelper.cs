@@ -35,7 +35,7 @@ namespace CrossoverSpa.Helper
         Task<bool> DeleteRoleFeatureByIdAsync(int id);
         List<UserViewModel> GetUsers();
         Task<bool> CreateRoleAsync(string role);
-
+        Task<bool> DeleteFeatureFromRoleByIdAsync(int id);
 
 
 

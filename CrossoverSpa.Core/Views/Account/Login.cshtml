@@ -8,8 +8,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>@ViewData["Title"] - CrossoverSpa.Core</title>
-
-
 <!-- jQuery Validation -->
 <script src="~/assets/lib/jquery-validation/jquery.validate.min.js"></script>
 <script src="~/assets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
@@ -24,7 +22,6 @@
         width: 500px;
     }
 </style>
-
 <div class="login-box">
     <div class="login-logo">
         <b>System Center</b>
@@ -47,7 +44,6 @@
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
             </div>
-
             if (!string.IsNullOrEmpty(Model.ErrorMessage))
             {
                 <div class="row">
@@ -56,7 +52,6 @@
                     </div>
                 </div>
             }
-
             if (!string.IsNullOrEmpty(Model.SuccessMessage))
             {
                 <div class="row">
@@ -65,7 +60,6 @@
                     </div>
                 </div>
             }
-
             <div class="row">
                 <div class="col-xs-12">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
