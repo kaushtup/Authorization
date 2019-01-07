@@ -141,12 +141,8 @@ namespace CrossoverSpa.Helper
                             {
                                 await new Repository<User>(_context).RemoveByIdAsync(item.Id);
                             }
-                        }
-                          
-                       
-                    }
-                    
-                   
+                        }                       
+                    }                   
                     await new Repository<Role>(_context).RemoveByIdAsync(id);
                     dbTran.Commit();
                     return true;
@@ -157,13 +153,6 @@ namespace CrossoverSpa.Helper
                     return false;
                 }
             }
-              
-
-
         }
-
-        
-
-
     }
 }

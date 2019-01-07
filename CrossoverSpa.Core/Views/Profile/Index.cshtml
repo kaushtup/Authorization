@@ -1,77 +1,84 @@
 ﻿@*@model IEnumerable<CrossoverSpa.ViewModels.MvcControllerInfo>*@
-@*@using CrossoverSpa.Core.Services;
-@inject IFeatureDiscovery mvcControllerInfo
-@{
-    var features = mvcControllerInfo.GetFeatures();
-    Layout = null;
-}
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CrossoverSpa.Core</title>
+@*@if (ViewData["LoginSuccess"] != null)
+{
+    <script>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
-</head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CrossoverSpa.Core</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    @if (features != null)
-                    {
-                        @foreach (var item in features)
+    window.alert("@ViewData["LoginSuccess"]");
+    </script>
+}*@
+@*@using CrossoverSpa.Core.Services;
+    @inject IFeatureDiscovery mvcControllerInfo
+    @{
+        var features = mvcControllerInfo.GetFeatures();
+        Layout = null;
+    }
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - CrossoverSpa.Core</title>
+
+        <environment include="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CrossoverSpa.Core</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @if (features != null)
                         {
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Key<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    @if (item.Value != null)
-                                    {
-                                        @foreach (var item2 in item.Value)
+                            @foreach (var item in features)
+                            {
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Key<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        @if (item.Value != null)
                                         {
-                                            if (item2.ToLower() != "signup" && item2.ToLower() != "login")
+                                            @foreach (var item2 in item.Value)
                                             {
-                                                <li><a asp-controller=@item.Key asp-action=@item2>@item2</a></li>
+                                                if (item2.ToLower() != "signup" && item2.ToLower() != "login")
+                                                {
+                                                    <li><a asp-controller=@item.Key asp-action=@item2>@item2</a></li>
+                                                }
                                             }
                                         }
-                                    }
-                                </ul>
-                            </li>
+                                    </ul>
+                                </li>
+                            }
                         }
-                    }
-                    else
-                    {
-                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    }
-                </ul>
+                        else
+                        {
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        }
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>*@
+        </nav>*@
 
 
 
 
 
-    @*<environment include="Development">
+@*<environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
@@ -93,4 +100,4 @@
     @RenderSection("Header", required: false)
     @RenderSection("Scripts", required: false)*@
 @*</body>
-</html>*@
+    </html>*@

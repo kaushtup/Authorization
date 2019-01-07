@@ -56,6 +56,7 @@ namespace CrossoverSpa.App.Web.Controllers
             if (user == null)
             {
                 model.ErrorMessage = "Invalid username or password.";
+                ViewData["LoginSuccess"] = "Login Failed !!!";
                 return View(model);
             }
 
@@ -90,6 +91,8 @@ namespace CrossoverSpa.App.Web.Controllers
 
 
                 ViewData["UserIdentity"] = HttpContext.User.Identity.Name;
+                ViewData["LoginSuccess"] = "Login Successful";
+               
                     return RedirectToAction("Index", "Profile");
                 
             }

@@ -35,7 +35,7 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
 
-            <th style="text-align:center">
+            <th style="text-align:right">
                 Your Actions
             </th>
 
@@ -44,12 +44,12 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr class="Search">
-                <td>
+            <tr  class="Search">
+                <td  >
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
 
-                <td style="text-align:center">
+                <td style="text-align:right">
                     @if (item.OldRole)
 
                     {

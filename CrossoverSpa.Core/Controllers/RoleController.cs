@@ -207,7 +207,6 @@ namespace CrossoverSpa.Core.Controllers
                         featuresList.Add(feature);
                     }
                 }
-
                 List<int> featureId = new List<int>();
                 foreach (var item in features)
                 {
